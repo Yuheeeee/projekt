@@ -1,0 +1,577 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --speed: 500ms
+}
+
+.dropdown-menu {
+    position: fixed;
+    right: 0.5%;
+    top: 12%;
+    background-image: url('../kepek/bg1.jpg');
+    width: 320px;
+    padding: 10px;
+    
+
+}
+
+
+.droplink {
+    margin-left: 10px;
+    padding-bottom: 4px;
+
+
+}
+
+.droplink2 {
+    
+    padding-bottom: 4px;
+}
+
+
+.dropdown-menu.active {
+    opacity: 0.95;
+    visibility: visible;
+    transform: translateY(0);
+    transition: var(--speed) ease;
+
+}
+
+.dropdown-menu.inactive {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: var(--speed) ease;
+
+}
+
+
+
+.dropdowninput {
+    border-radius: 20px;
+    padding: 2px 12px;
+    background-color: #f5f3fb1d;
+    margin-bottom: 10px;
+}
+
+.dropdown>label {
+    padding: 10px;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.register {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../kepek/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.registerform {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(0, 0, 62);
+    opacity: 50%;
+    width: 400px;
+    border-color: #D5BF75;
+    border-radius: 20px;
+    border-width: 3px;
+    padding: 10px;
+}
+
+.registerform>label {
+    margin: 10px 0;
+    color: #D5BF75;
+}
+.date-input{
+    color:wheat;
+    
+}
+::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+}
+.button {
+    width: 200px;
+    padding: 10px;
+    border-radius: 30px;
+    border-color: rgb(2, 2, 25);
+    border-width: 3px;
+    color: rgb(2, 2, 25);
+    margin-top: 10px;
+    background-color: #D5BF75;
+    font-size: large;
+    font-weight: bold;
+}
+
+.kinalatbutton {
+    width: 200px;
+    padding: 10px;
+    border-radius: 30px;
+    border-color:#D5BF75;
+    border-width: 3px;
+    color:#D5BF75;
+    margin-top: 10px;
+    margin-bottom: 24px;
+    background-color:rgba(255, 255, 255, 0.158);
+    font-size: large;
+    font-weight: bold;
+}
+
+.parag {
+    
+    font-weight: bold;
+    padding-bottom: 40px;
+    color: white;
+    text-align: left;
+    margin-left: 10px;
+}
+.kinalatbuttonback {
+    margin-left: 40px;
+    width: 150px;
+    padding: 3px;
+    border-radius: 30px;
+    border-color:#D5BF75;
+    border-width: 3px;
+    color:#D5BF75;
+    margin-top: 10px;
+    background-color:rgba(255, 255, 255, 0.158);
+    font-size: large;
+    font-weight: bold;
+}
+
+.idopontbutton {
+    width: 200px;
+    text-align: center ;
+    padding: 3px;
+    border-radius: 30px;
+    border-color:#D5BF75;
+    border-width: 3px;
+    color:#D5BF75;
+    margin-top: 10px;
+    background-color:rgba(44, 44, 44, 0.368);
+    font-weight: bold;
+}
+
+.idopontbutton:hover {
+    
+    width: 200px;
+    padding: 3px;
+    border-radius: 30px;
+    border-color:#565656;
+    border-width: 3px;
+    color:#565656;
+    margin-top: 10px;
+    background-color:#D5BF75;
+    font-weight: bold;
+}
+.berleslista.active {
+    font-family:monospace;
+    color: #D5BF75;
+    padding: 3px;
+    font-size: small;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 50px;
+    height: auto;
+    width: 350px;
+    top:3px;
+    border-width: 2px;
+    margin-left: 11px;
+    border-color: #D5BF75;
+    border-radius: 10px;
+    background-image: url('../kepek/bg1.jpg');
+    visibility: visible;
+    transform: translateY(0);
+    transition: var(--speed) ease;
+    z-index: 10;
+}
+
+.berleslista.inactive {
+    font-family:monospace;
+    color: #D5BF75;
+    padding: 3px;
+    font-size: small;
+    font-weight: bold;
+    position: absolute;
+    opacity: 0;
+    margin-left: 11px;
+    visibility: hidden;
+    margin-top: 50px;
+    height: auto;
+    width: 350px;
+    top:3px;
+    border-width: 2px;
+    border-color: #D5BF75;
+    border-radius: 10px;
+    background-image: url('../kepek/bg1.jpg');
+    transform: translateY(-20px);
+    transition: var(--speed) ease;
+    z-index: 10;
+}
+
+.kinalatbutton:hover {
+    width: 200px;
+    padding: 10px;
+    border-radius: 30px;
+    border-color:#565656;
+    border-width: 3px;
+    color:#565656;
+    margin-top: 10px;
+    background-color:#D5BF75;
+    font-size: large;
+    font-weight: bold;
+}
+
+.kinalatbuttonback:hover {
+    margin-left: 40px;
+    width: 150px;
+    padding: 3px;
+    border-radius: 30px;
+    border-color:#565656;
+    border-width: 3px;
+    color:#565656;
+    margin-top: 10px;
+    background-color:#D5BF75;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+.forminput {
+    padding: 10px;
+    width: 200px;
+    background-color: rgb(2, 2, 25);
+    color: #D5BF75;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #D5BF75;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 10px;
+    row-gap: 5%;
+    column-gap: 2%;
+}
+
+.flex-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 5%;
+      
+}
+
+.katcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 10px;
+}
+
+
+
+.img{
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    max-height: 210px;
+    width:100%;
+    object-fit:cover;
+    object-position: bottom;
+}
+
+.katcard {
+    flex-grow: 0;
+    margin: 5px;
+    border-radius: 20px;
+    border-width: 3px;
+    border-color: #D5BF75;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease;
+
+}
+.katcard.flipped {
+    transform: rotateY(180deg);
+}
+.katcard > * {
+    backface-visibility: hidden;
+    
+    
+}
+
+.katcard >figure {
+    backface-visibility: visible;
+}
+
+.katcard > .front {
+    z-index: 2;
+  }
+  
+.katcard > .back {
+    transform: rotateY(180deg);
+    z-index: 3;
+    
+  }
+
+.card {
+    flex-grow: 0;
+    flex-basis:49%;
+    height: 10%;
+    margin-top: 2%;
+    border-width: 3px;
+    border-color: #D5BF75;
+    
+}
+
+.infostyle {
+    text-align: center;
+    flex-grow: 0;
+    flex-basis:30%;
+    height: 10%;
+    color:#D5BF75;
+}
+
+.cardKapcsolat {
+    flex-grow: 0;
+    flex-basis:49%;
+    margin-top: 2%;
+    
+}
+
+.card-title{
+    color: #D5BF75;
+    font-weight: bold;
+}
+
+.text-holder{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    flex-wrap: wrap;
+    
+    column-gap: 5%;
+    padding: 10px;
+}
+.leiras{
+    color:#D5BF75;
+}
+
+.katleiras{
+    color:#D5BF75;
+    position: relative;
+    font-weight: bold;
+}
+
+.linediv{
+    height: 2px;
+    background-color:#D5BF75;
+}
+
+.cardback {
+    color:#D5BF75;
+    font-weight: bold;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.blur {
+   position: absolute;
+    bottom:-500px;
+    left: 0px;
+    width: 100%;
+    background-image: url('../kepek/bg1.jpg');
+    opacity: 90%;
+    z-index: 1;
+}
+
+.bg-style {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+
+
+.bg-stylekinalat {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height:fit-content;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.registerimage {
+    background-image: url('../kepek/register.jpg');
+    height: 80%;
+    width: auto;
+    border-radius: 40%;
+    border-color: #D5BF75;
+    border-width: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.rentimage {
+    background-image: url('../kepek/rent.jpg');
+    height: 80%;
+    width: auto;
+    border-radius: 40%;
+    border-color: #D5BF75;
+    border-width: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carkeyimg {
+    background-image: url('../kepek/carkey.jpg');
+    height: 80%;
+    width: auto;
+    border-radius: 40%;
+    border-color: #D5BF75;
+    border-width: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.background {
+    background-image: url('../kepek/bg1.jpg');
+    opacity: 90%;
+    height: fit-content;
+    background-size:cover;
+}
+
+.background1 {
+    background-image: url('../kepek/1.jpg');
+    
+    border-radius: 50%;
+    border-color: #D5BF75;
+    border-width: 5px;
+}
+
+.roundedborder {
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+}
+
+.roundedheader {
+    border-bottom-left-radius: 4rem 2rem;
+    transition: var(--speed) ease-in;
+
+}
+
+
+
+
+.paragraf1 {
+    color: #D5BF75;
+    
+    font-weight: bold;
+    font-family: Verdana, Tahoma, sans-serif;
+    text-align: center;
+
+}
+
+.paragraf2 {
+    color: #D5BF75;
+    font-size: 20px;
+
+}
+
+.paragraf3 {
+    color: oldlace;
+    font-weight: bold;
+}
+
+.padding {
+    padding-top: 50%;
+}
+
+.padding2 {
+    padding-top: 800px;
+}
+
+.indexcss {
+    z-index: 1000;
+}
+
+.HLink {
+    position: relative;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.HLink::after {
+    content: '';
+    background-color: #ffffff;
+    position: absolute;
+    left: 0px;
+    border-radius: 12px;
+    bottom: 0px;
+    height: 3px;
+    width: 0%;
+    transition-duration: 300ms;
+}
+
+.HLink:hover::after {
+    width: 100%;
+}
+
+.HLink2 {
+    position: relative;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.HLink2::after {
+    content: '';
+    background-color: #D5BF75;
+    position: absolute;
+    left: 0px;
+    border-radius: 12px;
+    bottom: 0px;
+    height: 3px;
+    width: 0%;
+    transition-duration: 300ms;
+}
+
+.HLink2:hover::after {
+    width: 100%;
+}
