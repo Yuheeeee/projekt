@@ -1,1 +1,1 @@
-# Alkalmazás indítása MySQL webszerver elindítása után, leírás  
+# Alkalmazás indítása MySQL webszerver elindítása után, leírás PATCH branchben
